@@ -1,0 +1,41 @@
+header {
+    padding: 1px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 18px;
+    text-align:center;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.options{
+    width: 50%;
+    margin:auto;
+    text-align:center;
+}
+
+form{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button{
+    height: 50px;
+    font-size:20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(31, 78, 31);
+    border-radius: 7px;
+    border: none;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
