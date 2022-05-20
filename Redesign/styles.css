@@ -11,12 +11,15 @@ h2{
     margin-bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
-.options{
-    width: 50%;
-    margin-left:auto;
-}
+
+
+
 
 form{
+    display: inline-display;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
     font-size: 20px;
     line-height: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
