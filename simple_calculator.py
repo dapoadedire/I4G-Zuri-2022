@@ -3,17 +3,22 @@ print("This calculator can only perform operations between 2 numbers please.")
 print("")
 print("")
 
+
 def add(a, b):
     print(f"{a} + {b} is {a + b}")
+
 
 def subtract(a, b):
     print(f"{a} - {b} is {a - b}")
 
+
 def divide(a, b):
     print(f"{a} / {b} is {a / b}")
 
+
 def multiply(a, b):
     print(f"{a} * {b} is {a * b}")
+
 
 def calculate(operation, a, b):
     if operation == "add":
@@ -29,7 +34,9 @@ def calculate(operation, a, b):
 
 
 calculate(
-    input("Please enter the operation you would like to perform: add, subtract, divide, multiply"),
+    input(
+        "Please enter the operation you would like to perform: add, subtract, divide, multiply"
+    ),
     int(input("Please enter the first number: ")),
-    int(input("Please enter the second number: "))
+    int(input("Please enter the second number: ")),
 )
