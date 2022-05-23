@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans:wght@100&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 30px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 200px;
+    margin:30px;
+    text-align: center;
+    padding: 50px;
+    font-size: larger;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: white solid 2px;
+}
+header h1{
+    font-size: 2.5em;
+    font-weight: 1000;
+    padding-bottom: 10px;
+}
+header h2{
+    padding-bottom: 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.first {
+    height: auto;
+    margin: 30px;
+    color: white;
+}
+
+.one {
+    height: 100%;
+    width: 60%;
+    padding: 40px;
+}
+
+
+blockquote h2{
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: right;
+    margin-right: 30px;
+}
+
+.one blockquote{
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 25px;
+    padding: 50px 0 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+.two {
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.second {
+    height: auto;
+    margin: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.three {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+footer{
+    text-align: center;
+    height: 50px;
+    margin: 30px;
+    font-family: 'Odibee Sans', cursive;
+}
+
+
+.two img{
+    height: 300px;
+    width: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .column {
+        width: 100%;
+    }
+}
+
+figure{
+    float: right;
+}
+
+
+figcaption{
+    border-top: 2px solid white;
+    text-align: justify;
+    padding: 20px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.notable{
+    padding: 50px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.notable strong{
+    font-weight: 1000;
+    text-decoration: underline solid white 20%;
+}
+.notable h3{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.notable li{
+    padding-bottom: 20px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: white;
+}
+
+#red {
+    color:red;
+}
+
+#bio{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
