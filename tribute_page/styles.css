@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans:wght@100&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@200&family=Odibee+Sans&display=swap');
+
+
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body{
-    margin: 30px;
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -79,6 +78,10 @@ blockquote h2{
     width: 40%;
     justify-content: center;
     padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .second {

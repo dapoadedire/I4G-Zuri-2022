@@ -37,6 +37,6 @@ tr:nth-child(even) {
     background-color: rgba(133, 228, 228, 0.200);
 }
 
-tr td:nth-child(even) {
+td:nth-child(even) {
     background-color: rgba(133, 228, 228, 0.200);
 }
