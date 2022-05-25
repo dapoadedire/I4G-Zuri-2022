@@ -22,6 +22,7 @@ def count_words():
      for word in words:
           #filter punctuation and convert to lowercase
            word = re.sub(r'[^\w\s]', '', word).lower()
+           
            if word in word_count:
                 word_count[word] += 1
            else:
