@@ -1,23 +1,22 @@
-# Check if a word is an anagrams 
+# Check if two words are anagrams 
 # Example:
-# (is_palindrome("hello") --> False
-# (is_palinfrome("racecar") --> True
+# find_anagrams("hello", "check") --> False
+# find_anagrams("below", "elbow") --> True
 
-
-def is_palindrome(word):
+import re
+def find_anagram(word, anagram):
     # [assignment] Add your code here
-    # change word to lowercase
-    word = word.lower()
-    word_palindrome = word[::-1]
-    if word == word_palindrome:
+
+    # filter all non-alphabetic characters and convert to lowercase.
+    word = "".join(re.findall("[a-zA-Z]+", word)).lower()
+    anagram = "".join(re.findall("[a-zA-Z]+", anagram)).lower()
+
+    if sorted(word.lower()) == sorted(anagram.lower()):
         return True
     else:
         return False
 
+print(find_anagram("hello", "check"))
+print(find_anagram("meBelow ", "elbow me"))
+print(find_anagram("redivider", "ddreiViEr"))
 
-print(is_palindrome("Racecar"))
-print(is_palindrome("hello"))
-print(is_palindrome("redivider"))
-print(is_palindrome("deiFied"))
-print(is_palindrome("reVivEr"))
-print(is_palindrome("thankstobe"))
