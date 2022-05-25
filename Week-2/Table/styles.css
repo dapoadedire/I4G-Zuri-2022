@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
 
+body{
+    background-color: rgb(206, 206, 206);
+}
+
 header {
     height: auto;
     margin: 20px;
@@ -16,8 +20,12 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
     border-spacing: 5px;
-    padding: 5px;
     font-family: 'Montserrat', sans-serif;
+}
+
+td, th{
+    padding: 5px;
+    text-align: center;
 }
 
 .table-heading {
@@ -27,16 +35,15 @@ td {
 
 table {
     width: 70%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 
 
 tr:nth-child(even) {
     background-color: rgba(133, 228, 228, 0.200);
 }
 
-td:nth-child(even) {
+td:nth-child(odd) {
     background-color: rgba(133, 228, 228, 0.200);
 }

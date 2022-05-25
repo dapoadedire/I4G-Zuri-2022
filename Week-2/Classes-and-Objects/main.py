@@ -1,4 +1,4 @@
-import re
+import random
 
 
 class Student:
@@ -8,6 +8,10 @@ class Student:
         self.age = age
         self.tracks = tracks
         self.score = score
+
+
+    def __str__(self):
+        return f"{self.name} is {self.age} years old and has {self.score} points. He enrolled for {self.tracks[0]} in the I4G course."
 
     def change_name(self, name: str):
         self.name = name
@@ -36,5 +40,7 @@ Bob.change_name("Peter")
 Bob.change_age(34)
 Bob.add_track("UI/UX")
 Bob.get_score()
+
+print(Bob)
 
 

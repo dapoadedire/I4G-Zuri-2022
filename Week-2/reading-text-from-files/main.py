@@ -18,10 +18,10 @@ def count_words():
      text = read_file_content("./Week-2/reading-text-from-files/story.txt")
     # [assignment] Add your code here
      words = text.split()
-    
      word_count = {}
      for word in words:
-           word = re.sub(r'[^\w\s]', '', word)
+          #filter punctuation and convert to lowercase
+           word = re.sub(r'[^\w\s]', '', word).lower()
            if word in word_count:
                 word_count[word] += 1
            else:
