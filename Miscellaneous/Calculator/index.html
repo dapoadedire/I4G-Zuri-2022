@@ -14,6 +14,11 @@
     <main>
         <table>
             <tr>
+                <th colspan="4">
+                    <h1>CALCEX-1</h1>
+                </th>
+            </tr>
+            <tr>
                 <th colspan="4" class="screen" >
                     <input id="screen" type="text" id="display" value="0" readonly>
                 </th>
@@ -22,25 +27,25 @@
                 <td>7</td>
                 <td>8</td>
                 <td>9</td>
-                <td>/</td>
+                <td id="div">÷</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>5</td>
                 <td>6</td>
-                <td>*</td>       
+                <td id="mul">×</td>       
             </tr>
             <tr>
                 <td>1</td>
                 <td>2</td>
                 <td>3</td>
-                <td>-</td>    
+                <td id="sub">-</td>    
             </tr>
             <tr>
                 <td>0</td>
-                <td>.</td>
-                <td>=</td>
-                <td>+</td>
+                <td id="point">.</td>
+                <td id="equals">=</td>
+                <td id ="add">+</td>
             </tr>
             <!-- <tr>
                 <td></td>
@@ -56,3 +61,19 @@
     </footer>
 </body>
 </html>
+<!-- 
+<tr>
+    <td>
+        <form action="index.php" method="post">
+            <input type="text" name="num1" placeholder="Number 1">
+            <input type="text" name="num2" placeholder="Number 2">
+            <select name="operator">
+                <option>None</option>
+                <option>Add</option>
+                <option>Subtract</option>
+                <option>Multiply</option>
+                <option>Divide</option>
+            </select>
+            <input type="submit" name="submit" value="Calculate">
+        </form>
+    </td> -->
