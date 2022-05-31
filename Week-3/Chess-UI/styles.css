@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@200&family=Odibee+Sans&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+table{
+    margin-top: 20px;
+    border: 2px solid rgb(163, 163, 163);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    width: 100px;
+    height: 100px;
+    border:none;
+    text-align: center;
+    font-size: 4em;
+}
+
+table, tr, td{
+    border-collapse: collapse;
+}
+
+.dark{
+    background-color: rgb(163, 163, 163);
+}
+
+footer{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: larger;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: larger;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
