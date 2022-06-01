@@ -30,7 +30,7 @@ nav {
     position: fixed;
     z-index: 1;
     text-align: center;
-    border-bottom: 2px solid white;
+  
 }
 
 
@@ -101,6 +101,20 @@ nav ul li .active {
     clear: both;
 }
 
+.row{
+    padding:10px;
+    height: auto;
+    vertical-align: middle;
+}
+.row h3{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+.three{
+    margin-bottom: 40px;
+}
  .name{
      padding-top: 200px;
  }
@@ -113,13 +127,17 @@ nav ul li .active {
     font-family: 'Montserrat', sans-serif;
 }
 
-
+.hobbies, .priorities, .non-prog-skills{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    list-style: circle;
+}
 footer {
     height: 200px;
     background-color: black;
     color: white;
     text-align: center;
-    border-top: 2px solid white;
+   
     padding: 30px;
 }
 
@@ -204,6 +222,7 @@ input#submit {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
 }
 
 input#submit:hover {
@@ -254,7 +273,7 @@ button {
     padding: 16px 24px;
     text-align: center;
     text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -277,6 +296,111 @@ button {
     box-shadow: none;
     transform: translateY(0);
 }
+
+.column{
+    display:grid;
+    place-items: center;
+}
+
+.skills-bar{
+    width: 90%;
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    padding:25px 30px;
+}
+
+.skills-bar .bar{
+    margin: 20px 0;
+}
+
+.skills-bar .bar:first-child{
+    margin-top: 0;
+}
+
+.skills-bar .bar .info{
+    margin-bottom: 10px;
+}
+.skills-bar .bar .info span{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 15px;
+    background-color: rgb(65, 63, 63);
+    border-radius: 10px;
+    width: 100%;
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(189, 174, 38);
+    position: absolute;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+.progress-line.html span{
+    width:90%;
+}
+.progress-line.css span{
+    width:30%;
+}
+
+.progress-line.python span{
+    width:40%;
+}
+
+.progress-line.javascript span{
+    width:15%;
+}
+
+
+.bar .progress-line span::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    right:0;
+    top: -8px;
+    border: 8px solid transparent;
+    border-bottom-width: 0px;
+    border-top-color: rgb(0, 0, 0);
+    border-right-width: 0px;
+
+}
+.bar .progress-line span::after{
+    position: absolute;
+    padding:1px 9px;
+    right:0;
+    border-radius: 3px;
+    top: -25px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgb(0, 0, 0);
+}
+
+.progress-line.html span::after{
+    content:"90%";
+}
+.progress-line.css span::after{
+    content:"30%";
+}
+
+.progress-line.python span::after{
+    content:"40%";
+}
+
+.progress-line.javascript span::after{
+    content:"15%";
+}
+
+
+
 
 @media (max-width: 1000px) {
     nav ul li a {
