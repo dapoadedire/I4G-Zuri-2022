@@ -15,7 +15,7 @@ def read_file_content(filename):
 
 
 def count_words():
-     text = read_file_content("./Week-2/reading-text-from-files/story.txt")
+     text = read_file_content("./story.txt")
     # [assignment] Add your code here
      words = text.split()
      word_count = {}
