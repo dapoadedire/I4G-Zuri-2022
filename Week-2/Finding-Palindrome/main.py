@@ -9,10 +9,7 @@ def is_palindrome(word):
     # change word to lowercase
     word = word.lower()
     word_palindrome = word[::-1]
-    if word == word_palindrome:
-        return True
-    else:
-        return False
+    return word == word_palindrome
 
 
 print(is_palindrome("Racecar"))
